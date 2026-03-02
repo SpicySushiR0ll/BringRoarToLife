@@ -3,7 +3,7 @@ import math
 from ast import increment_lineno
 
 import matplotlib
-matplotlib.use("MacOSX")  # IMPORTANT for PyCharm animation
+matplotlib.use("MacOSX")  # IMPORTANT for PyCharm animation. Change according to ide
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
@@ -76,25 +76,25 @@ def lineExtension (A, B, L, case): # using the position of two joints, it reposi
     dY = B[1] - A[1]
 
     theta = math.atan(dY/dX)
-    ## print (A,B,L,theta,dX, dY)
+   
 
     if case == 0: # this is the special case where we are starting from a frame position
-        if (dX > 0 and dY > 0):  # these are to make sure we head in the right direction
-            solution = [A[0] + L * math.cos(theta), A[1] - L * math.sin(theta)]
-        elif (dX < 0 and dY > 0): # for sure good
+        if (dX > 0 and dY > 0): 
+            solution = [A[0] + L * math.cos(theta), A[1] + L * math.sin(theta)]
+        elif (dX < 0 and dY > 0): 
             solution = [A[0] - L * math.cos(theta), A[1] - L * math.sin(theta)]
         elif (dX > 0 and dY < 0):
             solution = [A[0] + L * math.cos(theta), A[1] + L * math.sin(theta)]
         else: # for sure good
             solution = [A[0] - L * math.cos(theta), A[1] - L * math.sin(theta)]
     else:
-        if (dX > 0 and dY > 0):  # these are to make sure we head in the right direction
-            solution = [B[0] + L * math.cos(theta), B[1] - L * math.sin(theta)]
-        elif (dX < 0 and dY > 0): # for sure good
-            solution = [B[0] - L * math.cos(theta), B[1] - L * math.sin(theta)]
-        elif (dX > 0 and dY < 0):
+        if (dX > 0 and dY > 0): 
             solution = [B[0] + L * math.cos(theta), B[1] + L * math.sin(theta)]
-        else: # for sure good
+        elif (dX < 0 and dY > 0): 
+            solution = [B[0] - L * math.cos(theta), B[1] - L * math.sin(theta)]
+        elif (dX > 0 and dY < 0): 
+            solution = [B[0] + L * math.cos(theta), B[1] + L * math.sin(theta)]
+        else: 
             solution = [B[0] - L * math.cos(theta), B[1] - L * math.sin(theta)]
 
     return solution
@@ -202,18 +202,17 @@ def splitXY(i):
 ## so lets get started
 
 ## extreme positions = the points array at the top
+
 ## inbetween positions
 
 increment = 5 # All points are going to me this far apart
 
-
 for j in range(len(point)-1): ## go through all extreme points
-    ## print("passing in ",point[j],point[j+1])
     nextKey = max(allPoints.keys()) + 1
     allPoints[nextKey] = lineExtension(allPoints[nextKey - 1], point[j+1], increment,0)
     interpolate(point[j], point[j+1],increment, int(len(allPoints)-1))
 
-# now we need to calculate the joint positions and thetas
+## now we need to calculate the joint positions and thetas
 for i in allPoints:
     calc(i, allPoints)
 
