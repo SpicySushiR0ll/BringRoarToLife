@@ -56,3 +56,18 @@ This is an overview of our current full assembly with shell, head, and tail comp
 
 ![ASMB_3 0 servo Drawing v1](https://github.com/user-attachments/assets/928f2daa-c845-4c98-b00e-bc1b507ec135)
 
+## April 2026 Update
+I redesigned portions of the thigs and lower leg portions for added rigitity stiffness as knowing exactly where the leg is will be vital in implementing our walking gait. 
+
+<img width="1395" height="985" alt="Screenshot 2026-04-17 at 7 03 57 PM" src="https://github.com/user-attachments/assets/08682763-7b2d-4440-98a0-bbd49cf2fe96" />
+
+
+Material was added betnween the two thigh components and the tibula joints after flexing was noticed in the previous prototype. The thigh components was also broken up into two peices after FEA analysis showed that the upper connecting portions had a lot of stress concentrations. The connectiong portions were moved towards the center of the thigh and utilized m3 heat set inserts to fasten them together. Lastly, the most important improvement made with this itteration was the assemblies ability to support the weight of the animatronic withough the need of the motor being on or applying any torque. These Two photos show our prototype standing with no power supply attached
+
+<img width="3536" height="2680" alt="IMG_3899" src="https://github.com/user-attachments/assets/05df8598-33e6-4d4d-8d3d-54889d83bfaa" />
+<img width="4032" height="3024" alt="IMG_3903" src="https://github.com/user-attachments/assets/c3f18d46-ff64-4c75-a226-5d7870bb95b5" />
+
+
+
+
+
