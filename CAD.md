@@ -67,6 +67,33 @@ Material was added betnween the two thigh components and the tibula joints after
 <img width="3536" height="2680" alt="IMG_3899" src="https://github.com/user-attachments/assets/05df8598-33e6-4d4d-8d3d-54889d83bfaa" />
 <img width="4032" height="3024" alt="IMG_3903" src="https://github.com/user-attachments/assets/c3f18d46-ff64-4c75-a226-5d7870bb95b5" />
 
+This was acoomplished by limiting the range of motion of the tibula the leg assembly and allowing it to lock into place witt the upper linkage, transfering the weight load from the motors to the printed portions of the assembly. This allows for massive battery savings and big gains in run time as less force is needed from the motors throughout the walking gate.
+
+The last portion of CAD work that I contributed to this project was modeling of the battey compartment located on the underside of the animatronic. For this piece I first used the dimensions of the 8000 mah battery we switched to and offset different geometry from there to make the design parametric and easy to work with. I then extruded a crude rectangle and used Fusions simulations capablities to imitate the forces of the batteries weight as well as the clamping force provided by the mounting screws. The geometry was then optimized in order to eliminate uneccesary material while still retaining the needed strength to support the battery. From there the optimized geometry was filleted and printed.
+
+<img width="1392" height="1527" alt="Screenshot 2026-04-19 at 8 21 26 PM" src="https://github.com/user-attachments/assets/685c80fa-ea51-4cc4-a228-b8e8d6ffe3c8" />
+
+<img width="1392" height="1527" alt="Screenshot 2026-04-19 at 8 20 04 PM" src="https://github.com/user-attachments/assets/4bd46333-b781-4b23-be6a-03370d099f98" />
+
+<img width="1392" height="1527" alt="Screenshot 2026-04-19 at 8 19 42 PM" src="https://github.com/user-attachments/assets/2c229b52-3b92-4dd7-9789-652e3a84c431" />
+
+<img width="1392" height="1527" alt="Screenshot 2026-04-19 at 8 20 46 PM" src="https://github.com/user-attachments/assets/84626425-6724-4426-9dda-65d0fa9bfdd0" />
+
+<img width="1392" height="1527" alt="Screenshot 2026-04-19 at 8 20 59 PM" src="https://github.com/user-attachments/assets/6f2c5857-c825-4da3-b2a7-8a006245b9f9" />
+
+And finally this is the full assmbly of the final prototype
+
+<img width="4284" height="5712" alt="IMG_3995" src="https://github.com/user-attachments/assets/c120a14e-95c9-4c33-8612-25a64556ed06" />
+
+<img width="4284" height="5712" alt="IMG_3998" src="https://github.com/user-attachments/assets/7b039b38-c4e2-4724-9db3-b6e8ed37ebbf" />
+
+
+<img width="5712" height="4284" alt="IMG_3985" src="https://github.com/user-attachments/assets/256285d3-4851-4c98-995d-6a1175ff94ef" />
+
+<img width="5712" height="4284" alt="IMG_3994" src="https://github.com/user-attachments/assets/eae1f93f-441e-43a1-819a-ce796348f3f5" />
+
+
+
 
 
 
